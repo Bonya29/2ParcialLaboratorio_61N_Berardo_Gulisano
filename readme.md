@@ -175,11 +175,11 @@ Formulario → todoController::search() → todoModel::search()
 ## 🏗️ Arquitectura MVC
 
 ### **Modelo (M)**
-- `rutinaModel.php` - Maneja operaciones de la tabla 'rutina' de la base de datos
+- `rutinasModel.php` - Maneja operaciones de la tabla 'rutina' de la base de datos
 - `Model.php` (clase base) - Proporciona métodos CRUD genéricos
 
 ### **Vista (V)**
-- `rutinalist.php` - Lista principal de rutinas
+- `rutinasList.php` - Lista principal de rutinas
 - `addRutina.php` - Formulario para nueva rutina
 - `editRutina.php` - Formulario para editar rutina
 - `inc_header.php` - Navegación y estructura base
@@ -225,13 +225,13 @@ rutinasController::index() → rutinasModel::getAllWithDetails() → View::rende
    - Prepara datos para la vista
    - Llama a `View::render('rutinaslist', $data)`
 
-2. **Modelo** (`rutinaModel::getAllWithDetails()`):
+2. **Modelo** (`rutinasModel::getAllWithDetails()`):
 - Extiende `Model::all()` (clase base)
 - Ejecuta consulta SQL: `SELECT * FROM rutina ORDER BY tipo DESC`
 - Procesa cada tarea con `Rutina::getTipoText`, `Rutina::getTipoColo`, `Rutina::getFrecuenciaText` y `Rutina::getDuracionText`
 - Retorna array con datos procesados
 
-3. **Vista** (`rutinalist.php`):
+3. **Vista** (`rutinasList.php`):
 - Incluye `inc_header.php` (navegación)
 - Renderiza lista de tareas con Bootstrap
 - Incluye `inc_footer.php` (scripts)
@@ -349,7 +349,7 @@ Modal de Confirmación → rutinasController::delete() → rutinasModel::delete(
 | `/todo/toggle?id=1` | todoController | toggle | Cambiar estado |
 | `/todo/delete?id=1` | todoController | delete | Eliminar tarea |
 | `/todo/search?q=texto` | todoController | search | Buscar tareas |
-|--------------------------------------------------------------|
+|----------------------------------------------------------|
 | `/rutinas` | rutinasController | index | Lista principal |
 | `/rutinas/add` | rutinasController | add | Formulario nueva rutina |
 | `/rutinas/store` | rutinasController | store | Guardar nueva rutina |
