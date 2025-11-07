@@ -349,13 +349,13 @@ Modal de Confirmación → rutinasController::delete() → rutinasModel::delete(
 | `/todo/toggle?id=1` | todoController | toggle | Cambiar estado |
 | `/todo/delete?id=1` | todoController | delete | Eliminar tarea |
 | `/todo/search?q=texto` | todoController | search | Buscar tareas |
-|-------------------------------------------------------------------------|
-| `/rutinas` | rutinaController | index | Lista principal |
-| `/rutinas/add` | rutinaController | add | Formulario nueva rutina |
-| `/rutinas/store` | rutinaController | store | Guardar nueva rutina |
-| `/rutinas/edit?id=1` | rutinaController | edit | Formulario editar rutina |
-| `/rutinas/update` | rutinaController | update | Procesar edición rutina |
-| `/rutinas/delete?id=1` | rutinaController | delete | Eliminar rutina |
+|--------------------------------------------------------------|
+| `/rutinas` | rutinasController | index | Lista principal |
+| `/rutinas/add` | rutinasController | add | Formulario nueva rutina |
+| `/rutinas/store` | rutinasController | store | Guardar nueva rutina |
+| `/rutinas/edit?id=1` | rutinasController | edit | Formulario editar rutina |
+| `/rutinas/update` | rutinasController | update | Procesar edición rutina |
+| `/rutinas/delete?id=1` | rutinasController | delete | Eliminar rutina |
 
 
 ## 🧱 Patrones de diseño implementados
@@ -367,7 +367,7 @@ Modal de Confirmación → rutinasController::delete() → rutinasModel::delete(
 1. **Crear tabla**: Ejecutar `create_tables.sql`
 2. **Archivos**: Copiar todos los archivos según estructura
 3. **Configurar**: Verificar `core_config.php` (BD)
-4. **Acceder**: `http://localhost/proyecto/todo` o `http://localhost/proyecto/rutinas`
+4. **Acceder**: `http://localhost/2ParcialLaboratorio_61N_Berardo_Gulisano-main/todo` o `http://localhost/2ParcialLaboratorio_61N_Berardo_Gulisano-main/rutinas`
 
 ¡El sistema está listo para usar! 🎉
 

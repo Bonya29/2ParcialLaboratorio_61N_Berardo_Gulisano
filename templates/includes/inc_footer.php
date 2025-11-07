@@ -8,7 +8,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- Script para el modal de eliminación -->
-<script src="/proyecto/templates/views/todo/deleteModal.js"></script>
+<script src="/2ParcialLaboratorio_61N_Berardo_Gulisano-main/templates/views/todo/deleteModal.js"></script>
 
 </body>
 </html>

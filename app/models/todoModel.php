@@ -64,7 +64,16 @@ class todoModel extends Model {
             WHERE task LIKE ? OR description LIKE ? 
             ORDER BY created_at DESC
         ", ["%{$search}%", "%{$search}%"]);
-        return $result->fetchAll();
+        $todos = $result->fetchAll();
+
+        // Agregar los campos adicionales que la vista espera
+        foreach ($todos as &$todo) {
+            $todo['priority_text'] = Todo::getPriorityText($todo['priority'] ?? null);
+            $todo['priority_color'] = Todo::getPriorityColor($todo['priority'] ?? null);
+            $todo['formatted_date'] = isset($todo['created_at']) ? date('d/m/Y H:i', strtotime($todo['created_at'])) : '';
+        }
+
+        return $todos;
     }
 }
 ?>

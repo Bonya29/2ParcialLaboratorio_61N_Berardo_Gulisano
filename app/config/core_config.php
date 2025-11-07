@@ -13,7 +13,7 @@ date_default_timezone_set('America/Argentina/Buenos_Aires');
 define('LANG', 'es');
 
 // Rutas base del proyecto (diferentes para local y producción)
-define('BASEPATH', IS_LOCAL ? '/proyecto/' : '____EL BASEPATH EN PRODUCCIÓN___');
+define('BASEPATH', IS_LOCAL ? '/2ParcialLaboratorio_61N_Berardo_Gulisano-main/' : '____EL BASEPATH EN PRODUCCIÓN___');
 
 
 // Clave secreta para encriptación (cambiar en producción)
@@ -22,7 +22,7 @@ define('AUTH_SALT', 'CoreFramework!');
 
 // Configuración del servidor web
 define('PORT', '80');
-define('URL', IS_LOCAL ? 'http://localhost/proyecto/' : '___URL EN PRODUCCIÓN___');
+define('URL', IS_LOCAL ? 'http://localhost/2ParcialLaboratorio_61N_Berardo_Gulisano-main/' : '___URL EN PRODUCCIÓN___');
 
 // Sistema de archivos
 define('DS', DIRECTORY_SEPARATOR);
