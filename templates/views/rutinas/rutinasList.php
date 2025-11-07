@@ -53,7 +53,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header"><h5>¿Eliminar rutina?</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
-            <div class="modal-body">Esta acción no se puede deshacer. ¿Seguro de eliminar?</div>
+            <div class="modal-body">Esta acción no se puede deshacer. ¿Estás seguro de eliminar esta rutina?</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                 <a href="#" id="confirmDelete" class="btn btn-danger">Eliminar</a>

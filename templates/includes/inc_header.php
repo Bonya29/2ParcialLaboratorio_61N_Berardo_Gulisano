@@ -73,6 +73,11 @@
                         Nueva Tarea
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?= URL ?>rutinas/add">
+                        Nueva Rutina
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
